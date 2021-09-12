@@ -15,7 +15,7 @@ body {
 }
 
 html{
-    background:radial-gradient(circle, floralwhite, rgb(198, 239, 255) 50%, floralwhite 50%, rgb(193, 237, 255));
+    background:radial-gradient(floralwhite);
     background-size: 8px 8px;
 }
 
