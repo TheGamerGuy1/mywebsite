@@ -1,12 +1,9 @@
-<head>
-    <title>Plaatjes</title>
-
-</head>
+<title>Contact</title>
 
 <link type="text/css" rel="stylesheet"
-  href="/First%20Website/css/mijn-stylesheet.css"/>
+href="/First%20Website/css/subnav.css" />
 
-  <div class="navbar">
+<div class="navbar">
     <a href="/index.html">Home</a>
     <a href="/First%20Website/opdrachten/FAQ.html">FAQ</a>
     <div class="subnav">
@@ -27,17 +24,36 @@
       </div>
     </div>
     <div class="rightli" style="float:right">
-    <a href="First%20Website\Contact\contact.html">Contact</a>
+    <a href="First%20Website\Contact\contact.html" class="active">Contact</a>
     </div>
   </div>
 
-<body>
-<p> <a href="bananen.html">Bananen</a> </p>
-<p> <a href="appels.html">Appels</a> </p>
-<p> <a href="peren.html">Peren</a> </p>
+<link type="text/css" rel="stylesheet"
+ href="/First%20Website/Contact/contact.css"/>
 
+ <link type="text/css" rel="stylesheet"
+  href="/First%20Website/css/mijn-stylesheet.css"/>
 
-
-</body>
-
-
+<div class="container">
+    <form action="action_page.php">
+  
+      <label for="fname">Voornaam</label>
+      <input type="text" id="fname" name="firstname" placeholder="Je naam">
+  
+      <label for="lname">Achternaam</label>
+      <input type="text" id="lname" name="lastname" placeholder="Je achternaam">
+  
+      <label for="country">Land</label>
+      <select id="country" name="country">
+        <option value="Nederland">Nederland</option>
+        <option value="canada">Canada</option>
+        <option value="usa">Amerika</option>
+      </select>
+  
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Typ iets.." style="height:200px"></textarea>
+  
+      <input type="submit" value="Verstuur">
+  
+    </form>
+  </div>
