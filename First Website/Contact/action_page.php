@@ -7,9 +7,10 @@ if(!empty($_POST["send"])) {
 
 	$toEmail = "megekkotheone@gmail.com";
 	$mailHeaders = "From: " . $name . "<". $email .">\r\n";
-	if(mail($toEmail, $subject, $content, $mailHeaders)) {
-	    $message = "Jou bericht en informatie is succesvol ontvangen.";
+	if(isset($toEmail, $subject, $content, $mailHeaders)) {
+	  echo "Jou bericht en informatie is succesvol ontvangen.";
 	    $type = "success";
+		
 	}
 }
 require_once "contact-view.php";
