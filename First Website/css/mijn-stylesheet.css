@@ -1,40 +1,48 @@
+:root {
+    font-size: 16px;
+    font-family: sans-serif;
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    --bg-primary: #23232e;
+    --bg-secondary: #141418;
+}
+
+
+
 body {
     background-color:rgb(floralwhite);
-    border:2px solid gray;
-    border-radius: 16px;
-    font-family: sans-serif;
-    margin-left:auto;
-    margin-right: auto;
-    max-width: 1024px;
-    min-width: 256px;
-    padding-top: 8px;
-    padding-bottom: 24px;
-    padding-left: 24px;
-    padding-right: 24px;
+    color: black;
+    margin: 0;
+    padding: 0;
+
     
 }
 
-html, body {
-    width: 100%;
-    height:100%;
-  }
-  
-  body {
-      background: linear-gradient(-45deg, #f38969, #f0689c, #51c9f5, #21ebbc );
-      background-size: 400% 400%;
-      animation: gradient 15s ease infinite;
-  }
-  
-  @keyframes gradient {
-      0% {
-          background-position: 0% 50%;
-      }
-      50% {
-          background-position: 100% 50%;
-      }
-      100% {
-          background-position: 0% 50%;
-      }
-  }
+body::-webkit-scrollbar {
+    width: 0.25rem;  
+}
+
+body::-webkit-scrollbar-track{
+    background: black;
+
+}
+
+body::-webkit-scrollbar-thumb{
+    background: white;
+}
+
+main {
+    margin-left: 5rem;
+    padding: 1rem;
+
+}
+
+
+.navbar {
+    width: 5rem;
+    height: 100vh;
+    position: fixed;
+    background-color: var(--bg-primary);
+}
 
  
