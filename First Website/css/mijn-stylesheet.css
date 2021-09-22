@@ -5,6 +5,7 @@
     --text-secondary: #ececec;
     --bg-primary: #23232e;
     --bg-secondary: #141418;
+    --transition-speed: 600ms;
 }
 
 
@@ -39,11 +40,10 @@ main {
 
 
 .navbar {
-    width: 5rem;
-    height: 100vh;
     position: fixed;
     background-color: var(--bg-primary);
-    transition: width 230ms ease;
+    transition: width 600ms ease;
+    overflow: scroll;
 
 }
 
