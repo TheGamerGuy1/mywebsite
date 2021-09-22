@@ -135,7 +135,7 @@ main {
  }
 
  .navbar:hover .logo svg {
-     transform: rotate(-540deg);
+     transform: rotate(0deg);
  }
 
  /*small screens*/
