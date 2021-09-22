@@ -133,3 +133,29 @@ main {
      transform: rotate(0deg);
      transition: transform var(--transition-speed);
  }
+
+ .navbar:hover .logo svg {
+     transform: rotate(-540deg);
+ }
+
+ /*small screens*/
+@media only screen and (max-width: 600px) {
+
+}
+/*large screens*/
+@media only screen and (min-width: 600px) {
+.navbar {
+    top: 0;
+    width: 5rem;
+    height: 100vh;
+}
+.navbar:hover {
+    width: 16rem;
+}
+
+.navbar:hover .link-text {
+    display: inline;
+    transition: opacity var(--transition-speed);
+}
+
+}
