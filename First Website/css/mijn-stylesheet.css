@@ -32,7 +32,7 @@ html, body {
     font-family: 'Poppins', sans-serif;
   }
 
- 
+ /*Hiermee pas ik de scrollbar aan (dikte, kleur etc.*/
  ::-webkit-scrollbar {
     width: 5px;
   }
@@ -53,7 +53,7 @@ html, body {
     height: 100%;
     width: 260px;
     background: #010102;
-    z-index: 100;
+    z-index: 100; 
     transition: all 0.6s ease;
   }
   .sidebar.close{
