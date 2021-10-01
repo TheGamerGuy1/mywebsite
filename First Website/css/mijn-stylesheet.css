@@ -254,7 +254,7 @@ html, body {
     left: 260px;
     width: calc(100% - 260px);
     transition: all 0.5s ease;
-    padding: 15px;
+    padding: 13px;
   }
   .sidebar.close ~ .home-section{
     left: 78px;
