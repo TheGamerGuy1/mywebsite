@@ -32,7 +32,7 @@ html, body {
     font-family: 'Poppins', sans-serif;
   }
 
- /*Hiermee pas ik de scrollbar aan (dikte, kleur etc.*/
+ /*Hiermee pas ik de scrollbar aan (dikte, kleur etc.)*/
  ::-webkit-scrollbar {
     width: 5px;
   }
@@ -264,7 +264,7 @@ html, body {
     height: 60px;
     display: flex;
     align-items: center;
-    position:fixed;
+    position:flex;
   }
   .home-section .home-content .bx-menu,
   .home-section .home-content .text{
