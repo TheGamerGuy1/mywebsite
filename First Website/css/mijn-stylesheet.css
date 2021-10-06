@@ -264,7 +264,8 @@ html, body {
     height: 60px;
     display: flex;
     align-items: center;
-    position:flex;
+    position:sticky;
+    position:-webkit-sticky;
   }
   .home-section .home-content .bx-menu,
   .home-section .home-content .text{
