@@ -1,26 +1,114 @@
 <!DOCTYPE HTML>
 <head>
 <abbr title="Frequently Asked Questions">FAQ</abbr>
-<link type="text/css" rel="stylesheet"
-  href="/First%20Website/css/mijn-stylesheet.css"/>
+<link type="text/css" rel="stylesheet" href="/First%20Website/css/mijn-stylesheet.css"/>
   <link rel="shortcut icon" href="/First%20Website/afbeeldingen/istockphoto-1135090585-612x612.jpg" type="image/gif">
   <link rel="stylesheet" href="/First%20Website/css/mijn-stylesheet.css"/>
   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
 </head>
 
-<div id="navbar">
+<body>
+  <div class="sidebar close">
+  <div class="logo-details">
+    <i class='bx bxl-patreon'></i>
+    <span class="logo_name">Pjotter INC</span>
   </div>
-
+  <ul class="nav-links">
+    <li>
+      <a href="/index.html">
+        <i class='bx bx-home'></i>
+        <span class="link_name">Home</span>
+      </a>
+      <ul class="sub-menu blank">
+        <li><a class="link_name" href="/index.html">Home</a></li>
+      </ul>
+    </li>
+    <li>
+      <div class="iocn-link">
+        <a href="/First%20Website\opdrachten\FAQ.html">
+          <i class='bx bx-question-mark'></i>
+          <span class="link_name">FAQ</span>
+        </a>
+        
+      </div>
+      <ul class="sub-menu">
+        <li><a class="link_name" href="/First%20Website/opdrachten/FAQ.html">FAQ</a></li>
+      </ul>
+    </li>
+    <li>
+      <div class="iocn-link">
+        <a href="#">
+          <i class='bx bx-book-alt' ></i>
+          <span class="link_name">Opdrachten</span>
+        </a>
+        <i class='bx bxs-chevron-down arrow' ></i>
+      </div>
+      <ul class="sub-menu">
+        <li><a class="link_name" href="#">Opdrachten</a></li>
+        <li><a href="/First%20Website/opdrachten/opdracht8/Afbeeldingen.html">Afbeeldingen</a></li>
+        <li><a href="/First%20Website/opdrachten/opdracht5.html">Tags</a></li>
+        <li><a href="/First%20Website/opdrachten/Tabel/tabel.html">Tabel</a></li>
+      </ul>
+    </li>
+    <li>
+      <div class="iocn-link">
+      <a href="#">
+        <i class='bx bx-user-voice'></i>
+        <span class="link_name">Uitleg</span>
+      </a>
+      <i class='bx bxs-chevron-down arrow' ></i>
+    </div>
+      <ul class="sub-menu">
+        <li><a class="link_name" href="#">Uitleg</a></li>
+        <li><a href="/First%20Website/uitleg/optioneelonlinezettenmetgithub.html">Website online zetten met github (optioneel)</a></li>
+        <li><a href="/First%20Website/uitleg/basiswebsitemaken.html">Starten met website</a></li>
+        <li><a href="/First%20Website/uitleg/websiteonlinezetten.html">Online zetten van website</a></li>
+      </ul>
+    </li>
+    
+  
+    <li>
+  <div class="profile-details">
+    <div class="profile-content">
+      <img src="/First%20Website\afbeeldingen\istockphoto-1135090585-612x612.jpg" alt="profileImg">
+    </div>
+    <div class="name-job">
+      <div class="profile_name">Pjotter 3301</div>
+      <div class="job">Website Maker</div>
+    </div>
+    <i class='bx bx-wink-smile'></i>
+  </div>
+  </li>
+  </ul>
+  </div>
+  <section class="home-section">
+  <div class="home-content">
+    <i class='bx bx-menu' ></i>
+    
+  </div>
+  
   <script>
-    $(function(){
-      $("#navbar").load("/First%20Website/navbar/navbar.html");
-    });
+  let arrow = document.querySelectorAll(".arrow");
+  for (var i = 0; i < arrow.length; i++) {
+  arrow[i].addEventListener("click", (e)=>{
+  let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+  arrowParent.classList.toggle("showMenu");
+  });
+  }
+  let sidebar = document.querySelector(".sidebar");
+  let sidebarBtn = document.querySelector(".bx-menu");
+  console.log(sidebarBtn);
+  sidebarBtn.addEventListener("click", ()=>{
+  sidebar.classList.toggle("close");
+  });
   </script>
+  </body>
+
 
 <body>
-<main>
   <p>Wat is een tag?</p>
   <p> • Een tag is een catogorie toegevoegde informatie bij een digitaal bestand</p>
 <p>Wat is een element?</p>
@@ -30,7 +118,13 @@
 <p>Wat is een attribuutwaarde?</p>
 <p>• Een attribuut geeft dus extra info over een elemtent, dus de attribuutwaarde is wat voor informatie in die atrubuut staat</p>
 
-</main>
-
-
 </body>
+
+
+
+
+
+
+
+
+
