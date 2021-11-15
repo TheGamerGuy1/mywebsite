@@ -277,7 +277,7 @@ html, body {
     height: 60px;
     display: flex;
     align-items: center;
-    position:sticky;
+    position:sticky; /*Deze positie betekend dat als jij scrollt het element ook meegaat*/
     position:-webkit-sticky;
     top: 0;
   }
