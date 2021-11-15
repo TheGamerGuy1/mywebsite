@@ -1,11 +1,6 @@
 <!doctype HTML>
 <html>
-    <style>
-        table, th, td {
-          border:1px solid black;
-        }
-        </style>
-
+   
 <head>
     <title>Tabel voorbeeld</title>
     <link type="text/css" rel="stylesheet" href="/First%20Website/css/mijn-stylesheet.css"/>
@@ -99,7 +94,7 @@
   let arrow = document.querySelectorAll(".arrow");
   for (var i = 0; i < arrow.length; i++) {
   arrow[i].addEventListener("click", (e)=>{
-  let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+  let arrowParent = e.target.parentElement.parentElement; 
   arrowParent.classList.toggle("showMenu");
   });
   }
