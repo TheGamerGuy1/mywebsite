@@ -261,6 +261,7 @@ html, body {
     left: 78px;
     width: calc(100% - 78px);
   }
+  /*Dit zijn de instellingen van de knop met de 3 streepjes waar als je er op klikt, de navigatiebalk openklapt.*/
   .home-section .home-content{
     height: 60px;
     display: flex;
@@ -283,11 +284,15 @@ html, body {
     font-weight: 600;
     
   }
+  /*Dit is de animatie die de zijbalk maakt als hij word ingeklapt*/
   @media (max-width: 420px) {
     .sidebar.close .nav-links li .sub-menu{
       display: none;
     }
   }
   
-
+  /*Dit is voor de stijl van de tabel. */
+  table, th, td {
+    border:1px solid black;
+  }
 

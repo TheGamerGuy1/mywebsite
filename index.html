@@ -1,30 +1,33 @@
+<!--In deze pagina leg ik de html van de nav bar uit en ander dingen die vaker voorkomen op de website-->
+
 <!DOCTYPE HTML>
-<html lang="nl">
+<html lang="nl"> <!--De taal van de HTML is nu NL-->
 
 <head>
   <meta charset="utf-8">
-  <title>Goeie website</title>
-  <link rel="shortcut icon" href="/First%20Website/afbeeldingen/istockphoto-1135090585-612x612.jpg" type="image/gif">
-  <link rel="stylesheet" href="/First%20Website/css/mijn-stylesheet.css"/>
-  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Goeie website</title> <!--Titel die in de tabblad komt te staan-->
+  <link rel="shortcut icon" href="/First%20Website/afbeeldingen/istockphoto-1135090585-612x612.jpg" type="image/gif"> <!--Dit is het plaatje dat boven in het tablad komt te staan-->
+  <link rel="stylesheet" href="/First%20Website/css/mijn-stylesheet.css"/> <!--Dit is de link naar de stylesheet-->
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'> <!--Dit is de link van de website die ik gebruik voor mijn icoontjes-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Dit is voor apparaaten van verschillende formaten-->
 
 </head>
 
+<!--Dit is de code voor de navigatie balk van de website-->
 <body>
   <div class="sidebar close">
     <div class="logo-details">
-      <i class='bx bxl-patreon'></i>
-      <span class="logo_name">Pjotter INC</span>
+      <i class='bx bxl-patreon'></i> <!--Dit is een icoontje dat ik gebruik voor de zijbalk-->
+      <span class="logo_name">Pjotter INC</span> 
     </div>
-    <ul class="nav-links">
+    <ul class="nav-links"> <!--Dit zijn de links die je naar andere pagina's brengen-->
       <li>
         <a href="index.html">
           <i class='bx bx-home'></i>
-          <span class="link_name">Home</span>
+          <span class="link_name">Home</span> 
         </a>
         <ul class="sub-menu blank">
-          <li><a class="link_name" href="index.html">Home</a></li>
+          <li><a class="link_name" href="index.html">Home</a></li><!--De text die er komt te staan ipv index.html-->
         </ul>
       </li>
       <li>
@@ -47,7 +50,7 @@
           </a>
           <i class='bx bxs-chevron-down arrow' ></i>
         </div>
-        <ul class="sub-menu">
+        <ul class="sub-menu"> <!--Dit is een uitklapmenu. Als je er met je muis overheengaat of er op klikt, komen er meerdere linkjes tevoorschijn onder 1 link-->
           <li><a class="link_name" href="#">Opdrachten</a></li>
           <li><a href="First%20Website/opdrachten/opdracht8/Afbeeldingen.html">Afbeeldingen</a></li>
           <li><a href="First%20Website/opdrachten/opdracht5.html">Tags</a></li>
@@ -70,7 +73,7 @@
         </ul>
       </li>
       
-    
+    <!--Dit gedeelte is voor het onderste stuk van de zijbalk. Het profiel-->
       <li>
     <div class="profile-details">
       <div class="profile-content">
@@ -93,11 +96,12 @@
   
     <section>
   
+      <!--Dit is een script voor het uitklappen van de zijbalk-->
   <script>
   let arrow = document.querySelectorAll(".arrow");
   for (var i = 0; i < arrow.length; i++) {
-    arrow[i].addEventListener("click", (e)=>{
-   let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+    arrow[i].addEventListener("click", (e)=>{ 
+   let arrowParent = e.target.parentElement.parentElement;
    arrowParent.classList.toggle("showMenu");
     });
   }
@@ -109,10 +113,11 @@
   });
   </script>
 
-<main>
+<main> <!--Vanaf de main tag, komt de informatie over de website en de belangrijke text.-->
 <p>Hallo daar, welkom op mijn website!</p>
  <p>Hier vind je aardig wat info over Informatica en wat ik heb geleerd</p>
-<br>
+<!--Hieronder wat dummytext om de pagina op te vullen-->
+ <br>
    Dummy text
 <br>
  
@@ -174,24 +179,7 @@
 
 <p>Mauris, habitasse. Venenatis. Habitant diam potenti elit turpis, et interdum tortor orci potenti. Tortor diam parturient semper Lectus condimentum hymenaeos scelerisque.</p>
 
-
-
-
-
 </main>
-
 </section>
-
-
-    
-  
-    
-
-
-
- 
- 
  </body>
-
-
 </html>
