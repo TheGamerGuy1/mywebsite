@@ -57,15 +57,18 @@ html, body {
     z-index: 100; 
     transition: all 0.6s ease;
   }
+  /*Dit is hoe wijd de zijbalk word als hij dicht is*/
   .sidebar.close{
     width: 78px;
   }
+  /*Hoe het logotje onderaan de balk word weergeven*/
   .sidebar .logo-details{
     height: 60px;
     width: 100%;
     display: flex;
     align-items: center;
   }
+  
   .sidebar .logo-details i{
     font-size: 30px;
     color: #fff;
@@ -74,6 +77,7 @@ html, body {
     text-align: center;
     line-height: 50px;
   }
+  
   .sidebar .logo-details .logo_name{
     font-size: 22px;
     color: rgb(255, 255, 255);
@@ -86,6 +90,7 @@ html, body {
     opacity: 0;
     pointer-events: none;
   }
+  /*Hoe de linkjes in de balk worden weergeven*/
   .sidebar .nav-links{
     height: 100%;
     padding: 140px 0 150px 0;
@@ -94,6 +99,7 @@ html, body {
   .sidebar.close .nav-links{
     overflow: visible;
   }
+  /*Hiermee haal ik de scrollbar weg van de zijbalk (wat niet mooi staat)*/
   .sidebar .nav-links::-webkit-scrollbar{
     display: none;
   }
@@ -150,6 +156,7 @@ html, body {
     background: #1d1d1d;
     display: none;
   }
+  /*Hoe de linkjes in een sub menu worden weergeven*/
   .sidebar .nav-links li.showMenu .sub-menu{
     display: block;
   }
@@ -161,6 +168,7 @@ html, body {
     opacity: 0.6;
     transition: all 0.3s ease;
   }
+  /*Hoe het submenu worden weergeven als je met je muis eroverheen gaat*/
   .sidebar .nav-links li .sub-menu a:hover{
     opacity: 1;
   }
@@ -201,6 +209,7 @@ html, body {
     top: 50%;
     transform: translateY(-50%);
   }
+  /*Hoe het profiel onderaan de balk word weergeven*/
   .sidebar .profile-details{
     position: fixed;
     bottom: 0;
@@ -249,6 +258,7 @@ html, body {
   .sidebar .profile-details .job{
     font-size: 12px;
   }
+  /*Hoe de icoontjes in de balk worden weergeven (ook als je er overheen gaat)*/
   .home-section{
     position: relative;
     height: 100vh;
@@ -257,6 +267,7 @@ html, body {
     transition: all 0.5s ease;
     padding: 13px;
   }
+  
   .sidebar.close ~ .home-section{
     left: 78px;
     width: calc(100% - 78px);
